@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "placeholder";
+$dbname = "code_gate_p";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

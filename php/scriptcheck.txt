@@ -1,0 +1,22 @@
+##is login and is admin? [check]
+<?php
+    session_start();
+    if (!isset($_SESSION['username'])) {
+      header("Location: login.php");
+      exit;
+    }
+    
+    if (!preg_match("/^admin/", $_SESSION['username'])) {
+      header("Location: main.php");
+      exit;
+    }
+  ?>
+  
+  ##is Login? [check]
+  <?php
+    session_start();
+    if (!isset($_SESSION['username'])) {
+      header("Location: index.php");
+      exit;
+    }
+  ?>
