@@ -1,5 +1,8 @@
 <!DOCTYPE php>
 <html lang="en">
+<?php
+    session_start();
+  ?>
 <head>
 <!-- basic -->
 <meta charset="utf-8">
@@ -43,30 +46,31 @@
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">HOME</a>
                 </li>
+                
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">ABOUT</a>
+                  <a class="nav-link" href="product.html">Game</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="product.html">OUR PRODUCTS</a>
+                  <a class="nav-link" href="about.php">About</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="video.html">VIDEO GAMES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="remot.html">REMOT CONTROL</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
-                </li>
-                <li class="nav-item active">
+               
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				<?php
+					if (!isset($_SESSION['username'])) {
+						echo '<li class="nav-item active">
                   <a class="nav-link" href="#">SIGN IN</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">REGISTER</a>
-                </li>
+                </li>';
+						}else{
+							echo ('<li class="nav-item active">
+                  <a class="nav-link" href="#">'.$_SESSION['username'].'</a>
+                </li>');
+						}
+				?>
+                
               </ul>
             </div>
         </nav>
