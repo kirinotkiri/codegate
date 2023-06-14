@@ -1,29 +1,8 @@
 <!DOCTYPE php>
-<html>
-
+<html lang="en">
 <?php
     session_start();
-    if (isset($_SESSION['username'])) {
-      header("Location: index.php");
-      exit;
-    }
   ?>
-<style>
-.login-box {
-  width: 400px;
-  padding: 40px;
-  background-color: white;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  
-}
-
-.login-box h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
-}
-</style>
 <head>
 <!-- basic -->
 <meta charset="utf-8">
@@ -95,30 +74,9 @@
             </div>
         </nav>
 	</div>
-
+	
 <body>
-<div class="container" align="center">
-     <div class="login-box">
-    <div class="card-header">
-      <div class="log">Login</div>
-    </div>
-    <form action="login.php" method="post">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input required="" name="username" id="username" type="text">
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input required="" name="password" id="password" type="password">
-      </div>
-      <div class="form-group">
-        <input value="Login" type="submit" name="submit">
-      </div>
-    </form>
-  </div>
-    </div>
-  
-
+    <div class="level1"><a href="level1.php"><button>Level 1: Easy Programming Questions</button></a></div>
 </body>
-
+</html>
 </html>

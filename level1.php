@@ -1,30 +1,16 @@
 <!DOCTYPE php>
-<html>
-
+<html lang="en">
 <?php
     session_start();
-    if (isset($_SESSION['username'])) {
-      header("Location: index.php");
-      exit;
-    }
   ?>
-<style>
-.login-box {
-  width: 400px;
-  padding: 40px;
-  background-color: white;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  
-}
-
-.login-box h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
-}
-</style>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogicGate's Challenges</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	
 <!-- basic -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,6 +39,7 @@
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
 </head>
 
 <div class="header_section">
@@ -97,28 +84,57 @@
 	</div>
 
 <body>
-<div class="container" align="center">
-     <div class="login-box">
-    <div class="card-header">
-      <div class="log">Login</div>
+    <div class="level1"><button>Level 1: Easy Programming Questions</button></div>
+    <!--info box buat setelah dipencet levels. otomatis, gosa diubah...-->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You'll have <span>15 seconds</span> per question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once timer goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points for every correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
     </div>
-    <form action="login.php" method="post">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input required="" name="username" id="username" type="text">
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input required="" name="password" id="password" type="password">
-      </div>
-      <div class="form-group">
-        <input value="Login" type="submit" name="submit">
-      </div>
-    </form>
-  </div>
+    <div class="quiz_box">
+        <header>
+            <div class="title">LogicGate Challenge</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next </button>
+        </footer>
     </div>
-  
-
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Save and Quit Quiz</button>
+        </div>
+    </div>
+    <script src="level1.js"></script>
+    <script src="script.js"></script>
 </body>
-
+</html>
 </html>

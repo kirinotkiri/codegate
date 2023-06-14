@@ -44,7 +44,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">HOME</a>
+                  <a class="nav-link" href="index.php">HOME</a>
                 </li>
                 
                 <li class="nav-item">
@@ -59,7 +59,7 @@
 				<?php
 					if (!isset($_SESSION['username'])) {
 						echo '<li class="nav-item active">
-                  <a class="nav-link" href="#">SIGN IN</a>
+                  <a class="nav-link" href="login_page.php">SIGN IN</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">REGISTER</a>
@@ -67,7 +67,7 @@
 						}else{
 							echo ('<li class="nav-item active">
                   <a class="nav-link" href="#">'.$_SESSION['username'].'</a>
-                </li>');
+                </li><li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>');
 						}
 				?>
                 
