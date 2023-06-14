@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>Gamepad</title>
+<title>Levels</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
@@ -47,7 +47,7 @@
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="product.html">Game</a>
+                  <a class="nav-link" href="levelmain.php">Game</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.php">About</a>
@@ -61,11 +61,11 @@
                   <a class="nav-link" href="login_page.php">SIGN IN</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">REGISTER</a>
+                  <a class="nav-link" href="registerpage.php">REGISTER</a>
                 </li>';
 						}else{
 							echo ('<li class="nav-item active">
-                  <a class="nav-link" href="#">'.$_SESSION['username'].'</a>
+                  <a class="nav-link" href="profilepage.php">'.$_SESSION['username'].'</a>
                 </li><li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>');
 						}
 				?>

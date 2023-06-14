@@ -1,11 +1,41 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <title>Register Page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleReg.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Gamepad</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+
 <body>
   <div class="container">
     <div class="title">Registration</div>
@@ -13,8 +43,12 @@
       <form action="#">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your first name" required>
+          </div>
+		  div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your last name" required>
           </div>
           <div class="input-box">
             <span class="details">Username</span>
@@ -37,26 +71,7 @@
             <input type="text" placeholder="Confirm your password" required>
           </div>
         </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
-        </div>
+       
         <div class="button">
           <input type="submit" value="Register">
         </div>
