@@ -15,7 +15,10 @@
   background-color: white;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  
+}
+
+.container{
+  padding-top: 300px;
 }
 
 .login-box h1 {
@@ -64,7 +67,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">HOME</a>
+                  <a class="nav-link" href="index.php">Home</a>
                 </li>
                 
                 <li class="nav-item">

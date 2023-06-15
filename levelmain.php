@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">HOME</a>
+                  <a class="nav-link" href="index.php">Home</a>
                 </li>
                 
                 <li class="nav-item">
@@ -90,6 +90,8 @@
        ?>
 
 <body>
+  <!--Levels Page Starts Here-->
+
     <div class="level1"><a href="level1.php"><button>Level 1: Easy Programming Questions <?php if ($row2['lv1']=1){echo " (Done!)";}?>
 	</button></a></div>
 </body>

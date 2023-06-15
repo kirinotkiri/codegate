@@ -11,6 +11,10 @@
   ?>
   
 <style>
+.title{
+  padding-top: 200px;
+}
+
 .content form .user-details{
   display: flex;
   flex-wrap: wrap;
@@ -97,6 +101,7 @@ form .input-box span.details{
  @media(max-width: 584px){
  .container{
   max-width: 100%;
+  padding-top: 50px;
 }
 form .user-details .input-box{
     margin-bottom: 15px;
@@ -116,6 +121,7 @@ form .user-details .input-box{
   @media(max-width: 459px){
   .container .content .category{
     flex-direction: column;
+    padding-top: 50px;
   }
 </style>
 
@@ -165,7 +171,7 @@ form .user-details .input-box{
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">HOME</a>
+                  <a class="nav-link" href="index.php">Home</a>
                 </li>
                 
                 <li class="nav-item">

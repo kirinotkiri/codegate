@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">HOME</a>
+                  <a class="nav-link" href="index.php">Home</a>
                 </li>
                 
                 <li class="nav-item">
@@ -84,208 +84,89 @@
         </nav>
 	</div>
 	<!-- header section end -->
-  <!-- banner section start -->
-  <div class="banner_section layout_padding">
+    <!-- product section start -->
+    <div class="product_section layout_padding">
     <div class="container">
-      <div id="my_slider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-6">
-                <h1 class="video_text">Video games</h1>
-                <h1 class="controller_text">controller</h1>
-                <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                <div class="shop_bt"><a href="#">Shop Now</a></div>
-              </div>
-              <div class="col-md-6">
-                <div class="image_1"><img src="images/img-1.png"></div>
-            </div>
+      <div class="product_text">Welcome to Logic<span style="color: #5ca0e9;">Gate</span></div>
+      <p class="long_text">A Place Where You Can Learn How to Code, Peacefully.</p>
+      <div class="product_section_2">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image_2"><img src="images/brainindex.png"></div>
+            <div class="price_text"> Train Your <span style="color: #3a3a38;">Logic</span></div>
+            <h1 class="game_text">Take Our Quiz</h1>
+            <p class="long_text">Welcome to LogicGate, an exhilarating web quiz designed to challenge and refine your coding skills! 
+              Step into the world of logical thinking, problem-solving, and algorithmic reasoning as you embark on a captivating journey through 
+              the intricacies of programming.</p>
           </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-6">
-                <h1 class="video_text">Video games</h1>
-                <h1 class="controller_text">controller</h1>
-                <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                <div class="shop_bt"><a href="#">Shop Now</a></div>
-              </div>
-              <div class="col-md-6">
-                <div class="image_1"><img src="images/img-1.png"></div>
-            </div>
-          </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-6">
-                <h1 class="video_text">Video games</h1>
-                <h1 class="controller_text">controller</h1>
-                <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                <div class="shop_bt"><a href="#">Shop Now</a></div>
-              </div>
-              <div class="col-md-6">
-                <div class="image_1"><img src="images/img-1.png"></div>
-            </div>
-          </div>
+          <div class="col-md-6">
+            <div class="image_2"><img src="images/coding.png"></div>
+            <div class="price_text">Unleash Your <span style="color: #3a3a38;">Coding Skills</span></div>
+            <h1 class="game_text">Solve Coding Problems</h1>
+            <p class="long_text">LogicGate is an interactive and engaging coding quiz that transcends traditional learning boundaries. 
+              Whether you're a seasoned developer looking to sharpen your logical acumen or a budding programmer eager to put your skills to the test, 
+              LogicGate provides a platform for continuous growth and exploration.</p>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-          <i class="fa fa-angle-right"></i>
-        </a>
+      </div>
+      <div class="see_main">
+        <div class="see_bt"><a href="registerpage.php">Register Now!</a></div>
       </div>
     </div>
   </div>
-  <!-- banner section end -->
+  <!-- product section end -->
   <!-- about section start -->
   <div class="about_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="image_2"><img src="images/img-2.png"></div>
+          <div class="image_3"><img src="images/galaxybrain.jpg"></div>
         </div>
         <div class="col-md-6">
-          <h1 class="about_text">ABOUT</h1>
-          <p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-          <div class="shop_bt_2"><a href="#">Shop Now</a></div>
+          <h1 class="about_text">ABOUT US</h1>
+          <p class="lorem_text">We're literally just a bunch of university students doing a project, we will never gonna give you up, we will never gonna let you down</p>
+          <div class="shop_bt_2"><a href="levelmain.php">Try the quiz now</a></div>
         </div>
       </div>
     </div>
   </div>
   <!-- about section end -->
-  <!-- product section start -->
-  <div class="product_section layout_padding">
-    <div class="container">
-      <div class="product_text">Our <span style="color: #5ca0e9;">products</span></div>
-      <p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
-      <div class="product_section_2">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="image_2"><img src="images/img-3.png"></div>
-            <div class="price_text">Price $ <span style="color: #3a3a38;">200</span></div>
-            <h1 class="game_text">Video Game</h1>
-            <p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
-          </div>
-          <div class="col-md-6">
-            <div class="image_2"><img src="images/img-3.png"></div>
-            <div class="price_text">Price $ <span style="color: #3a3a38;">300</span></div>
-            <h1 class="game_text">Video Game</h1>
-            <p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
-          </div>
-        </div>
-      </div>
-      <div class="see_main">
-        <div class="see_bt"><a href="#">See More</a></div>
-      </div>
-    </div>
-  </div>
-  <!-- product section end -->
-  <!-- video section start -->
+
+  <!-- play now section start -->
   <div class="video_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="video_text_2">3d video game</h1>
-          <h1 class="controller_text_2">remoto control</h1>
-          <p class="banner_text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-          <div class="shop_bt"><a href="#">Shop Now</a></div>
+          <h1 class="video_text_2">Try Out Our</h1>
+          <h1 class="controller_text_2">Problem Solving Quiz!</h1>
+          <p class="banner_text_2">Are you ready to push the boundaries of your coding process? Embark on an adventure 
+            into the LogicGate quiz, where your logical thinking, problem-solving abilities, and coding expertise will be 
+            put to the ultimate test. Join a vibrant community of programmers, unlock new levels of understanding, 
+            and emerge as a master of logic in the vast realm of programming.</p>
+          <div class="shop_bt"><a href="#">Play Now</a></div>
         </div>
         <div class="col-md-6">
-          <div class="image_4"><img src="images/img-4.png"></div>
+          <div class="image_4"><img src="images/error.png"></div>
         </div>
       </div>
     </div>
   </div>
-  <!-- video section end -->
-  <!-- testimonial section start -->
-  <div class="testimonial_section layout_padding">
-    <div class="container">
-      <h1 class="testimonial_text">Testimonial</h1>
-      <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-      <div class="testimonial_section_2">
-        <div class="box_main">
-          <div class="quote_icon"><img src="images/quote-icon.png"></div>
-          <p class="dolor_text"> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
-          <div class="client_main">
-            <div class="client_left">
-              <div class="images_5"><img src="images/img-5.png"></div>
-            </div>
-            <div class="client_right">
-              <h1 class="sandy_text">Sandy Delex</h1>
-              <p class="sandy_text_1">Reprehenderit</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="see_main">
-        <div class="see_bt"><a href="#">See More</a></div>
-      </div>
-    </div>
-  </div>
-  <!-- testimonial section end -->
-  <!-- contact section start -->
-  <div class="contact_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="email_box">
-                    <div class="input_main">
-                       <div class="container">
-                          <form action="/action_page.php">
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Name" name="Name">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Email" name="Name">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Phone Numbar" name="Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                            </div>
-                          </form>   
-                       </div> 
-                        <div class="main_bt"><a href="#">SEND</a></div>                  
-                    </div>
-                 </div>
-        </div>
-        <div class="col-md-6">
-          <div class="image_6"><img src="images/img-6.png"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- contact section end -->
-  <!-- footer section start -->
-  <div class="section_footer ">
+  <!-- playnow section end -->
+
+ <!-- footer section start -->
+ <div class="section_footer ">
       <div class="container"> 
           <div class="footer_section_2">
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-3">
                   <h2 class="account_text">About Us</h2>
-                  <p class="ipsum_text_2">dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r</p>
+                  <p class="ipsum_text_2">We're literally just a bunch of university students doing a project, we will never gonna give you up, we will never gonna let you down</p>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                  <h2 class="account_text">Useful Link</h2>
-                  <div class="useful_link">
-                    <ul>
-                      <li><a href="#">Video games</a></li>
-                      <li><a href="#">Remote control</a></li>
-                      <li><a href="#">3d controller</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                <h2 class="account_text">Contact Us</h2>
-                <p class="ipsum_text_2">dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e </p>
-                </div>
+
+
           <div class="col-sm-6 col-md-6 col-lg-3">
-            <h2 class="account_text">Newsletter</h2>
-            <input type="" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
-            <button class="subscribr_bt">SUBSCRIBE</button>
+          <h2 class="account_text">Contact Us</h2>
+                <p class="ipsum_text_2">+6282112774927 <br>+628996233233</p>
           </div>
         </div>
       </div>
@@ -302,8 +183,8 @@
   <!-- footer section end -->
   <!-- copyright section start -->
   <div class="copyright_section">
-    <div class="container">
-      <p class="copyright_text">Copyright 2020 All Right Reserved By <a href="https://html.design/"> Free html Templates</p>
+  <div class="container">
+      <p class="copyright_text">Copyright 2023 All Right Reserved By <a href="index.php"><img src="images/logo.png"></a> LogicGate</p>
     </div>
   </div>
   <!-- copyright section end -->

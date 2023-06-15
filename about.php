@@ -89,10 +89,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="image_2"><img src="images/galaxybrain.jpg"></div>
+          <div class="about_padding"><img src="images/galaxybrain.jpg"></div>
         </div>
         <div class="col-md-6">
-          <h1 class="about_text">ABOUT</h1>
+          <h1 class="about_padding about_text">ABOUT</h1>
           <p class="lorem_text">We're literally just a bunch of university students doing a project, we will never gonna give you up, we will never gonna let you down</p>
           <div class="shop_bt_2"><a href="levelmain.php">Try the quiz now</a></div>
         </div>
@@ -110,14 +110,10 @@
                   <p class="ipsum_text_2">We're literally just a bunch of university students doing a project, we will never gonna give you up, we will never gonna let you down</p>
                 </div>
 
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                <h2 class="account_text">Contact Us</h2>
-                <p class="ipsum_text_2">+6282112774927</p>
-                </div>
+
           <div class="col-sm-6 col-md-6 col-lg-3">
-            <h2 class="account_text">Newsletter</h2>
-            <input type="" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
-            <button class="subscribr_bt">SUBSCRIBE</button>
+          <h2 class="account_text">Contact Us</h2>
+                <p class="ipsum_text_2">+6282112774927</p>
           </div>
         </div>
       </div>
