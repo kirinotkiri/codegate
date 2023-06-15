@@ -2,6 +2,16 @@
 <html lang="en">
 <?php
     session_start();
+    if (!isset($_SESSION['username'])) {
+      header("Location: index.php");
+      exit;
+    }include 'config.php';
+	
+	if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  $username = $_SESSION['username'];
+  $sql = "SELECT * FROM user_info WHERE username = '$username'";
+  $result = $conn->query($sql);
+	$row = $result->fetch_assoc();}
   ?>
 <head>
 <!-- basic -->
@@ -65,7 +75,7 @@
                 </li>';
 						}else{
 							echo ('<li class="nav-item active">
-                  <a class="nav-link" href="profilepage.php">'.$_SESSION['username'].'</a>
+                  <a class="nav-link" href="profilepage.php">'.$row['first_name'].'</a>
                 </li><li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>');
 						}
 				?>

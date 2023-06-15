@@ -1,10 +1,17 @@
 <!DOCTYPE php>
 <?php
     session_start();
+	include 'config.php';
     if (isset($_SESSION['username'])) {
       header("Location: index.php");
       exit;
     }
+	
+	if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  $username = $_SESSION['username'];
+  $sql = "SELECT * FROM user_info WHERE username = '$username'";
+  $result = $conn->query($sql);
+	$row = $result->fetch_assoc();}
   ?>
   
 <style>
@@ -184,7 +191,7 @@ form .user-details .input-box{
                 </li>';
 						}else{
 							echo ('<li class="nav-item active">
-                  <a class="nav-link" href="profilepage.php">'.$_SESSION['username'].'</a>
+                  <a class="nav-link" href="profilepage.php">'.$_row['first_name'].'</a>
                 </li><li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>');
 						}
 				?>
@@ -200,35 +207,35 @@ form .user-details .input-box{
   <div class="container">
     <div class="title">Registration</div>
     <div class="content">
-      <form action="register.php">
+      <form action="adduser_action.php" method="post">
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input type="text" placeholder="Enter your first name" required>
+            <input type="text" name = "first_name" placeholder="Enter your first name" required>
           </div>
 		  <div class="input-box">
             <span class="details">Last Name</span>
-            <input type="text" placeholder="Enter your last name" required>
+            <input type="text" name = "last_name" placeholder="Enter your last name" required>
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" name = "username" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="email" name = "email" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" name = "phone" placeholder="Enter your number" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="password" name = "password" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="password" name = "passwordcon" placeholder="Confirm your password" required>
           </div>
         </div>
        

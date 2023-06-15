@@ -2,14 +2,6 @@
 <html lang="en">
 <?php
     session_start();
-	include 'config.php';
-
-	
-	if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  $username = $_SESSION['username'];
-  $sql = "SELECT * FROM user_info WHERE username = '$username'";
-  $result = $conn->query($sql);
-	$row = $result->fetch_assoc();}
   ?>
 <head>
     <meta charset="UTF-8">
@@ -18,36 +10,6 @@
     <title>LogicGate's Challenges</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-	
-<!-- basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- mobile metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<!-- site metas -->
-<title>Level 1</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">	
-<!-- bootstrap css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<!-- style css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Responsive-->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- fevicon -->
-<link rel="icon" href="images/fevicon.png" type="image/gif" />
-<!-- Scrollbar Custom CSS -->
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-<!-- Tweaks for older IEs-->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<!-- owl stylesheets --> 
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-
 </head>
 
 <div class="header_section">
@@ -63,7 +25,7 @@
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="levelmain.php">Game</a>
+                  <a class="nav-link" href="product.html">Game</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.php">About</a>
@@ -74,14 +36,14 @@
 				<?php
 					if (!isset($_SESSION['username'])) {
 						echo '<li class="nav-item active">
-                  <a class="nav-link" href="login_page.php">SIGN IN</a>
+                  <a class="nav-link" href="#">SIGN IN</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="registerpage.php">REGISTER</a>
+                  <a class="nav-link" href="#">REGISTER</a>
                 </li>';
 						}else{
 							echo ('<li class="nav-item active">
-                  <a class="nav-link" href="profilepage.php">'.$row['first_name'].'</a>
+                  <a class="nav-link" href="#">'.$_SESSION['username'].'</a>
                 </li><li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>');
 						}
 				?>

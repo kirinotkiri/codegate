@@ -109,46 +109,47 @@
 						</a>
 					</div>
 				</div>
-				<form action="updateProf.php">
+				<form action="updateProf.php" method="post">
 				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
 					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
 						<h3 class="mb-4">Account Settings</h3>
+						<h4 class="mb-4">Username: <?php echo $row['username'] ?></h4>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
 								  	<label>First Name</label>
-								  	<input type="text" class="form-control" value="<?php echo $row['first_name'] ?>">
+								  	<input type="text" class="form-control" value="<?php echo $row['first_name'] ?>" name="first_name">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 								  	<label>Last Name</label>
-								  	<input type="text" class="form-control" value="<?php echo $row['last_name'] ?>">
+								  	<input type="text" class="form-control" value="<?php echo $row['last_name'] ?>" name="last_name">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 								  	<label>Email</label>
-								  	<input type="text" class="form-control" value="<?php echo $row['email'] ?>">
+								  	<input type="text" class="form-control" value="<?php echo $row['email'] ?>" name="email">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 								  	<label>Phone number</label>
-								  	<input type="text" class="form-control" value="<?php echo $row['phone'] ?>">
+								  	<input type="text" class="form-control" value="<?php echo $row['phone'] ?>" name="phone">
 								</div>
 							</div>
 							
 							<div class="col-md-12">
 								<div class="form-group">
 								  	<label>Bio</label>
-									<textarea class="form-control" rows="4" ><?php echo $row['bio'] ?></textarea>
+									<textarea class="form-control" rows="4" name="bio"><?php echo $row['bio'] ?></textarea>
 								</div>
 							</div>
 						</div>
 						<div>
-							<button class="btn btn-primary">Update</button>
-							<button class="btn btn-light">Cancel</button>
+							<button class="btn btn-primary" type="submit" name="submit">Update</button>
+							<button class="btn btn-light" type="button" onClick="window.location='profilepage.php';return false;">Cancel</button>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
