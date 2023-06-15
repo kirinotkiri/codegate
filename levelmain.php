@@ -1,18 +1,16 @@
 <!DOCTYPE php>
 <html lang="en">
 <?php
+	include 'config.php';
     session_start();
-    if (!isset($_SESSION['username'])) {
-      header("Location: index.php");
-      exit;
-    }include 'config.php';
-	
-	if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (isset($_SESSION['username'])) {if ($_SERVER["REQUEST_METHOD"] == "GET") {
   $username = $_SESSION['username'];
   $sql = "SELECT * FROM user_info WHERE username = '$username'";
   $result = $conn->query($sql);
-	$row = $result->fetch_assoc();}
-  ?>
+  $row = $result->fetch_assoc();}
+	
+	
+}?>
 <head>
 <!-- basic -->
 <meta charset="utf-8">
@@ -46,7 +44,7 @@
 
 <div class="header_section">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+            <div class="logo"><a href="index.php"><img src="images/logo.png"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>

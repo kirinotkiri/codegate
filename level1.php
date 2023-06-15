@@ -1,16 +1,16 @@
 <!DOCTYPE php>
 <html lang="en">
 <?php
-    session_start();
 	include 'config.php';
-
-	
-	if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    session_start();
+    if (isset($_SESSION['username'])) {if ($_SERVER["REQUEST_METHOD"] == "GET") {
   $username = $_SESSION['username'];
   $sql = "SELECT * FROM user_info WHERE username = '$username'";
   $result = $conn->query($sql);
-	$row = $result->fetch_assoc();}
-  ?>
+  $row = $result->fetch_assoc();}
+	
+	
+}?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,7 +52,7 @@
 
 <div class="header_section">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+            <div class="logo"><a href="index.php"><img src="images/logo.png"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -137,9 +137,13 @@
         <div class="score_text">
         </div>
         <div class="buttons">
-            <button class="restart">Replay Quiz</button>
+		<form action="save.php" method="post">
+			<input type="hidden" name="lvl" value="lv1">
+            <button class="restart" onClick="window.location='levelmain.php';return false;">Replay Quiz</button>
             <button class="quit">Save and Quit Quiz</button>
-        </div>
+			
+        </form>
+		</div>
     </div>
     <script src="level1.js"></script>
     <script src="script.js"></script>

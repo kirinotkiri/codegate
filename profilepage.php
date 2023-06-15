@@ -49,7 +49,7 @@
 
 <div class="header_section">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+            <div class="logo"><a href="index.php"><img src="images/logo.png"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -78,7 +78,7 @@
                 </li>';
 						}else{
 							echo ('<li class="nav-item active">
-                  <a class="nav-link" href="profilepage.php">'.$_SESSION['username'].'</a>
+                  <a class="nav-link" href="profilepage.php">'.$row['first_name'].'</a>
                 </li><li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>');
 						}
 				?>
@@ -152,13 +152,15 @@
 							<button class="btn btn-light" type="button" onClick="window.location='profilepage.php';return false;">Cancel</button>
 						</div>
 					</div>
+					</form>
 					<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+					<form action="updatePass.php" method="post">
 						<h3 class="mb-4">Password Settings</h3>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
 								  	<label>Old password</label>
-								  	<input type="password" class="form-control">
+								  	<input type="password" class="form-control" name="password">
 								</div>
 							</div>
 						</div>
@@ -166,23 +168,24 @@
 							<div class="col-md-6">
 								<div class="form-group">
 								  	<label>New password</label>
-								  	<input type="password" class="form-control">
+								  	<input type="password" class="form-control" name="newpass">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 								  	<label>Confirm new password</label>
-								  	<input type="password" class="form-control">
+								  	<input type="password" class="form-control" name="newpass2">
 								</div>
 							</div>
 						</div>
 						<div>
 							<button class="btn btn-primary" type="submit"name="submit">Update</button>
-							<button class="btn btn-light">Cancel</button>
+							<button class="btn btn-light" type="button" onClick="window.location='profilepage.php';return false;">Cancel</button>
 						</div>
 					</div>
+					</form>
 			    </div>
-				</form>
+				
 			</div>
 		</div>
 	</section>

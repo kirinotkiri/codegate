@@ -45,8 +45,11 @@ $query2= "INSERT INTO user_info (UUID, username,first_name,last_name,phone,email
 
 mysqli_query($conn, $query2);
 // Redirect back to the manage user page and show a success message
+$query3 = "INSERT INTO user_progress (username,lv1,lv2,lv3,lv4,lv5,lv6) VALUES(?,0,0,0,0,0,0)"; 
+	$stmt = $conn->prepare($query3);
+	$stmt->bind_param("s",$username);$stmt->execute();$stmt->close();
 header('Location: login_page.php?success=user_added');
-
 mysqli_close($conn);
+
 
 ?>
