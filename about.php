@@ -89,12 +89,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="image_2"><img src="images/img-2.png"></div>
+          <div class="image_2"><img src="images/galaxybrain.jpg"></div>
         </div>
         <div class="col-md-6">
           <h1 class="about_text">ABOUT</h1>
-          <p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-          <div class="shop_bt_2"><a href="#">Shop Now</a></div>
+          <p class="lorem_text">We're literally just a bunch of university students doing a project, we will never gonna give you up, we will never gonna let you down</p>
+          <div class="shop_bt_2"><a href="levelmain.php">Try the quiz now</a></div>
         </div>
       </div>
     </div>
@@ -107,21 +107,12 @@
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-3">
                   <h2 class="account_text">About Us</h2>
-                  <p class="ipsum_text_2">dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r</p>
+                  <p class="ipsum_text_2">We're literally just a bunch of university students doing a project, we will never gonna give you up, we will never gonna let you down</p>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                  <h2 class="account_text">Useful Link</h2>
-                  <div class="useful_link">
-                    <ul>
-                      <li><a href="#">Video games</a></li>
-                      <li><a href="#">Remote control</a></li>
-                      <li><a href="#">3d controller</a></li>
-                    </ul>
-                  </div>
-                </div>
+
                 <div class="col-sm-6 col-md-6 col-lg-3">
                 <h2 class="account_text">Contact Us</h2>
-                <p class="ipsum_text_2">dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e </p>
+                <p class="ipsum_text_2">+6282112774927</p>
                 </div>
           <div class="col-sm-6 col-md-6 col-lg-3">
             <h2 class="account_text">Newsletter</h2>
@@ -144,7 +135,7 @@
   <!-- copyright section start -->
   <div class="copyright_section">
     <div class="container">
-      <p class="copyright_text">Copyright 2020 All Right Reserved By <a href="https://html.design/"> Free html Templates</p>
+      <p class="copyright_text">Copyright 2023 All Right Reserved By <a href="index.php"><img src="images/logo.png"></a> CodeGate</p>
     </div>
   </div>
   <!-- copyright section end -->
