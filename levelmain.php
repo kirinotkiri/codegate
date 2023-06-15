@@ -83,8 +83,14 @@
         </nav>
 	</div>
 	
+	<?php
+		  $query1 = "SELECT * FROM user_progress WHERE username = '$username'";
+		  $result = $conn->query($query1);
+		  $row2 = $result->fetch_assoc();
+       ?>
+
 <body>
-    <div class="level1"><a href="level1.php"><button>Level 1: Easy Programming Questions</button></a></div>
+    <div class="level1"><a href="level1.php"><button>Level 1: Easy Programming Questions <?php if ($row2['lv1']=1){echo " (Done!)";}?>
+	</button></a></div>
 </body>
-</html>
 </html>
