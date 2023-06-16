@@ -59,7 +59,7 @@
                   <a class="nav-link" href="levelmain.php">Game</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.php">About</a>
+                  <a class="nav-link" href="index.php#about">About</a>
                 </li>
                
 				</ul>
@@ -122,7 +122,7 @@
         <div class="col-md-6">
           <div class="image_3"><img src="images/galaxybrain.jpg"></div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="about">
           <h1 class="about_text">ABOUT US</h1>
           <p class="lorem_text">We're literally just a bunch of university students doing a project, we will never gonna give you up, we will never gonna let you down</p>
           <div class="shop_bt_2"><a href="levelmain.php">Try the quiz now</a></div>

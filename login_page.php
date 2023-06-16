@@ -74,7 +74,7 @@
                   <a class="nav-link" href="levelmain.php">Game</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.php">About</a>
+                  <a class="nav-link" href="index.php#about">About</a>
                 </li>
                
 				</ul>
