@@ -215,8 +215,8 @@ button {
 }
 
 .layout_padding {
-     padding-top: 90px;
-     padding-bottom: 0px;
+     padding-top: 60px;
+     padding-bottom: 60px;
 }
 
 .padding_0{
@@ -230,6 +230,13 @@ button {
 .navbar {
     padding: 20px 30px;
 }
+
+.header_section{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 10px;
     padding-left: 10px;
@@ -348,15 +355,32 @@ button {
     float: left;
     background-color: #f2f7fd;
     height: auto;
+    padding-top: 0px;
     padding-bottom: 90px;
 }
-
-.image_2 {
-    width: 100%;
-    float: left;
+.about_padding{
+    padding-top: 200px;
+}
+.about_text{
     padding-top: 50px;
 }
 
+.image_2 {
+    width: 95%;
+    float: right;
+}
+
+.image_3{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.image_4{
+    width: 100%;
+    text-align: right;
+    padding-top: 50px;
+}
 .about_text{
     width: 100%;
     float: left;
@@ -365,6 +389,7 @@ button {
     font-weight: 600;
     text-transform: uppercase;
     text-align: right;
+    padding-top: 200px;
 }
 
 .lorem_text{
@@ -409,6 +434,7 @@ button {
 }
 
 .product_text{
+    padding-top: 150px;
     width: 100%;
     float: left;
     font-size: 50px;
@@ -819,3 +845,64 @@ button {
     margin-top: 0px; 
 }
 
+.level_menu{
+    padding: 300px;   
+}
+
+.levels_text{
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #599ee9;
+    font-weight: 600;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.levels_menu {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-bottom: 60px;
+}
+
+.levels_menu .level1_menutry{
+    position: relative;
+    width: 300px;
+    height: 360px;
+    margin: 10px;
+    background: #F2F7FD;
+    border-radius: 45px;
+}
+
+.levels_menu .level2_menutry{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    background: #F2F7FD;
+    border-radius: 45px;
+}
+
+
+.levels_menu .level1_menutry .text_level{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.levels_menu .level1_menutry .text_level h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.levels_menu .level1_menutry .gambaraja img{
+    width: 300px;
+    height: 200px;
+    border-radius: 45px 45px 0px 0px;
+    text-align: center;
+    object-fit: cover;
+}
