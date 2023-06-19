@@ -116,13 +116,13 @@
   </div>
   <!-- product section end -->
   <!-- about section start -->
-  <div class="about_section layout_padding">
+  <div class="about_section layout_padding" id="about">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="image_3"><img src="images/galaxybrain.jpg"></div>
         </div>
-        <div class="col-md-6" id="about">
+        <div class="col-md-6">
           <h1 class="about_text">ABOUT US</h1>
           <p class="lorem_text">We're literally just a bunch of university students doing a project, we will never gonna give you up, we will never gonna let you down</p>
           <div class="shop_bt_2"><a href="levelmain.php">Try the quiz now</a></div>
@@ -131,27 +131,6 @@
     </div>
   </div>
   <!-- about section end -->
-
-  <!-- play now section start -->
-  <div class="video_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="video_text_2">Try Out Our</h1>
-          <h1 class="controller_text_2">Problem Solving Quiz!</h1>
-          <p class="banner_text_2">Are you ready to push the boundaries of your coding process? Embark on an adventure 
-            into the LogicGate quiz, where your logical thinking, problem-solving abilities, and coding expertise will be 
-            put to the ultimate test. Join a vibrant community of programmers, unlock new levels of understanding, 
-            and emerge as a master of logic in the vast realm of programming.</p>
-          <div class="shop_bt"><a href="#">Play Now</a></div>
-        </div>
-        <div class="col-md-6">
-          <div class="image_4"><img src="images/error.png"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- playnow section end -->
 
  <!-- footer section start -->
  <div class="section_footer ">
