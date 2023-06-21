@@ -529,7 +529,7 @@ footer button.show{
         </div>
         <div class="buttons">
 		<form action="save.php" method="post">
-			<input type="hidden" name="lvl" value="lv1">
+			<input type="hidden" name="lvl" value="lv4">
             <button class="restart" onClick="window.location='levelmain.php';return false;">Replay Quiz</button>
             <button class="quit">Save and Quit Quiz</button>
 			

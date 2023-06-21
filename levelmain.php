@@ -124,7 +124,7 @@
                 <h3 style="color: #5ca0e9;">Level 1</h3>
                 <h3>Basic IT Quiz</h3>
                 <?php 
-                  if ($row2['lv1']==1){
+                  if ($row2['lv1']==1 && isset($_SESSION['username'])){
                       echo "<b style='color: #5ca0e9;'>Completed</b>";
                       }
                 ?>
@@ -140,7 +140,7 @@
                 <h3 style="color: #5ca0e9;">Level 2</h3>
                 <h3>Basic Code Quiz</h3>
                 <?php 
-                  if ($row2['lv2']==1){
+                  if ($row2['lv2']==1 && isset($_SESSION['username'])){
                       echo "<b style='color: #5ca0e9;'>Completed</b>";
                       }
                 ?>
@@ -156,7 +156,7 @@
                 <h3 style="color: #5ca0e9;">Level 3</h3>
                 <h3>Python Quiz</h3>
                 <?php 
-                  if ($row2['lv3']==1){
+                  if ($row2['lv3']==1 && isset($_SESSION['username'])){
                       echo "<b style='color: #5ca0e9;'>Completed</b>";
                       }
                 ?>
@@ -176,7 +176,7 @@
                 <h3 style="color: #5ca0e9;">Level 4</h3>
                 <h3>Java Quiz</h3>
                 <?php 
-                  if ($row2['lv4']==1){
+                  if ($row2['lv4']==1 && isset($_SESSION['username'])){
                       echo "<b style='color: #5ca0e9;'>Completed</b>";
                       }
                 ?>
@@ -192,7 +192,7 @@
                 <h3 style="color: #5ca0e9;">Level 5</h3>
                 <h3>PHP Quiz</h3>
                 <?php 
-                  if ($row2['lv5']==1){
+                  if ($row2['lv5']==1 && isset($_SESSION['username'])){
                       echo "<b style='color: #5ca0e9;'>Completed</b>";
                       }
                 ?>
@@ -208,7 +208,7 @@
                 <h3 style="color: #5ca0e9;">Level 6</h3>
                 <h3>Problem Solving Quiz</h3>
                 <?php 
-                  if ($row2['lv6']==1){
+                  if ($row2['lv6']==1 && isset($_SESSION['username'])){
                       echo "<b style='color: #5ca0e9;'>Completed</b>";
                       }
                 ?>
